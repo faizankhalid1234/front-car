@@ -22,7 +22,7 @@ export default function Home() {
   const [loading, setLoading] = useState(true)
   const [showAddForm, setShowAddForm] = useState(false)
 
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://cars-back-one.vercel.app'
 
   useEffect(() => {
     fetchCars()

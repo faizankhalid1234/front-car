@@ -24,7 +24,7 @@ interface CarCardProps {
 export default function CarCard({ car, onDelete }: CarCardProps) {
   const [isEditing, setIsEditing] = useState(false)
   const [editedCar, setEditedCar] = useState(car)
-  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'
+  const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://cars-back-one.vercel.app'
   
   // Get image URL - use car's image or generate random one from reliable source
   const [carImageUrl, setCarImageUrl] = useState(
